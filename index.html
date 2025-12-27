@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Configuratore Giubba Trotto</title>
+  <style>
+    :root { --bg:#0b0f19; --card:#121a2a; --muted:#8aa0c8; --txt:#e9f0ff; --line:#1f2b44; }
+    *{ box-sizing:border-box; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial; }
+    body{ margin:0; background:linear-gradient(180deg,#070a12, #0b0f19 30%, #070a12); color:var(--txt); }
+    .wrap{ max-width:1100px; margin:0 auto; padding:18px; display:grid; grid-template-columns: 380px 1fr; gap:16px; }
+    .card{ background:rgba(18,26,42,.9); border:1px solid var(--line); border-radius:16px; padding:14px; box-shadow:0 10px 30px rgba(0,0,0,.25); }
+    h1{ font-size:18px; margin:0 0 10px; }
+    h2{ font-size:14px; margin:14px 0 8px; color:#cfe0ff; }
+    .muted{ color:var(--muted); font-size:12px; line-height:1.3; }
+    .row{ display:flex; gap:10px; align-items:center; margin:8px 0; }
+    label{ font-size:12px; color:#cfe0ff; width:92px; }
+    select, input[type="text"]{
+      width:100%;
+      padding:10px 10px;
+      border-radius:12px;
+      border:1px solid #263552;
+      background:#0c1425;
+      color:var(--txt);
+      outline:none;
+    }
+    input[type="text"]::placeholder{ color:#6f86ad; }
+    .btns{ display:flex; gap:10px; margin-top:10px; }
+    button{
+      width:100%;
+      padding:10px 12px;
+      border-radius:12px;
+      border:1px solid #2a3a5c;
+      background:#13203a;
+      color:var(--txt);
+      cursor:pointer;
+    }
+    button:hover{ filter:brightness(1.08); }
+    button.primary{ background:#1b3a78; border-color:#2d57a7; }
+    .step{ display:flex; gap:8px; margin:6px 0 12px; }
+    .pill{
+      font-size:12px; padding:6px 10px; border-radius:999px;
+      border:1px solid #2a3a5c; background:#0c1425; color:#cfe0ff;
+    }
+    .pill.on{ background:#1b3a78; border-color:#2d57a7; }
+    .preview{
+      min-height:520px;
+      display:flex; align-items:center; justify-content:center;
+      background:radial-gradient(1200px 500px at 30% 10%, rgba(83,150,255,.14), transparent 60%),
+                 radial-gradient(900px 500px at 60% 90%, rgba(255,83,195,.08), transparent 60%);
+      border-radius:16px;
+      border:1px solid var(--line);
+      overflow:hidden;
+      position:relative;
+    }
+    #svgHost svg{ width:min(640px, 92%); height:auto; }
+    .hint{ margin-top:8px; font-size:12px; color:var(--muted); }
+    .small{ font-size:11px; color:#9db3da; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Configuratore giubba da trotto</h1>
+      <div class="step">
+        <div class="pill on" id="pill1">1) Modello</div>
+        <div class="pill" id="pill2">2) Colori</div>
+        <div class="pill" id="pill3">3) Testi</div>
+      </div>
+
+      <h2>Step 1 — Scegli il modello</h2>
+      <div class="row">
+        <label>Modello</label>
+        <select id="modelSelect">
+          <option value="prova1puro.svg">Prova 1</option>
+          <option value="prova2puro.svg" selected>Prova 2</option>
+        </select>
+      </div>
+      <div class="muted">
+        Carica i file <b>prova1puro.svg</b> e <b>prova2puro.svg</b> nella stessa cartella di questa pagina (oppure modifica i percorsi nel codice).
+      </div>
+
+      <h2>Step 2 — Colori</h2>
+      <div class="row">
+        <label>Colore 1</label>
+        <select id="c1"></select>
+      </div>
+      <div class="row">
+        <label>Colore 2</label>
+        <select id="c2"></select>
+      </div>
+      <div class="row">
+        <label>Colore 3</label>
+        <select id="c3"></select>
+      </div>
+      <div class="small">Suggerimento: “Colore 3” spesso coincide con profili/contorni (nero di base).</div>
+
+      <h2>Step 3 — Personalizzazioni</h2>
+      <div class="row">
+        <label>Nome</label>
+        <input id="pocketName" type="text" placeholder="Nome sul taschino" maxlength="18" />
+      </div>
+      <div class="row">
+        <label>Iniziali</label>
+        <input id="sleeveInit" type="text" placeholder="ES: GC" maxlength="3" />
+      </div>
+
+      <div class="btns">
+        <button id="resetBtn">Reset</button>
+        <button class="primary" id="applyBtn">Applica</button>
+      </div>
+
+      <div class="hint">
+        Il testo viene posizionato automaticamente usando le forme del taschino/maniche dentro l’SVG.<br/>
+        Se vuoi spostarlo/ruotarlo “a mano”, dimmelo e ti aggiungo slider di posizione/rotazione.
+      </div>
+    </div>
+
+    <div class="card">
+      <h1>Anteprima</h1>
+      <div class="preview">
+        <div id="svgHost" aria-label="Anteprima giubba"></div>
+      </div>
+      <div class="hint">Funziona su Aruba SuperSite: incolli questo codice in una pagina HTML (o lo carichi come file) + carichi gli SVG.</div>
+    </div>
+  </div>
+
+<script>
+  // ====== CONFIG COLOURS (standard) ======
+  const COLOR_OPTIONS = [
+    ["Nero", "#000000"],
+    ["Bianco", "#FFFFFF"],
+    ["Rosso", "#FF0000"],
+    ["Bordeaux", "#7A0019"],
+    ["Blu Navy", "#0B1B3A"],
+    ["Blu Royal", "#0047FF"],
+    ["Azzurro", "#35A7FF"],
+    ["Verde", "#00A651"],
+    ["Verde Scuro", "#0B5D1E"],
+    ["Giallo", "#FFD200"],
+    ["Oro", "#C9A227"],
+    ["Arancio", "#FF6A00"],
+    ["Viola", "#6D28D9"],
+    ["Fucsia", "#FF2DAA"],
+    ["Grigio", "#808080"]
+  ];
+
+  // Placeholder colors presenti negli SVG caricati (i tuoi file usano spesso questi):
+  // (usati come fallback se non troviamo id "colore_1/2/3")
+  const PLACEHOLDER = { c1:"#ff0000", c2:"#ffffff", c3:"#000000" };
+
+  // ====== DOM ======
+  const modelSelect = document.getElementById("modelSelect");
+  const c1Sel = document.getElementById("c1");
+  const c2Sel = document.getElementById("c2");
+  const c3Sel = document.getElementById("c3");
+  const pocketName = document.getElementById("pocketName");
+  const sleeveInit = document.getElementById("sleeveInit");
+  const svgHost = document.getElementById("svgHost");
+  const applyBtn = document.getElementById("applyBtn");
+  const resetBtn = document.getElementById("resetBtn");
+
+  const pill1 = document.getElementById("pill1");
+  const pill2 = document.getElementById("pill2");
+  const pill3 = document.getElementById("pill3");
+
+  function fillSelect(sel, defaultHex){
+    sel.innerHTML = "";
+    for(const [name, hex] of COLOR_OPTIONS){
+      const opt = document.createElement("option");
+      opt.value = hex;
+      opt.textContent = `${name} (${hex})`;
+      sel.appendChild(opt);
+    }
+    // imposta default (se presente)
+    const found = [...sel.options].find(o => o.value.toLowerCase() === defaultHex.toLowerCase());
+    if(found) sel.value = found.value;
+    else sel.value = COLOR_OPTIONS[0][1];
+  }
+
+  fillSelect(c1Sel, "#FF0000");
+  fillSelect(c2Sel, "#FFFFFF");
+  fillSelect(c3Sel, "#000000");
+
+  // ====== SVG LOAD / APPLY ======
+  let currentSvgDoc = null; // SVGElement (inline)
+  let currentModelUrl = modelSelect.value;
+
+  async function loadModel(url){
+    currentModelUrl = url;
+    pill1.classList.add("on"); pill2.classList.remove("on"); pill3.classList.remove("on");
+
+    svgHost.innerHTML = "<div class='muted'>Caricamento modello…</div>";
+    const res = await fetch(url, { cache: "no-store" });
+    if(!res.ok){
+      svgHost.innerHTML = `<div class="muted">Errore: non trovo <b>${url}</b>. Controlla che il file sia nella stessa cartella della pagina.</div>`;
+      currentSvgDoc = null;
+      return;
+    }
+    const txt = await res.text();
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(txt, "image/svg+xml");
+    const svg = doc.documentElement;
+
+    // Pulizia: elimina eventuali script esterni
+    svg.querySelectorAll("script").forEach(s => s.remove());
+
+    // Inseriamo inline
+    svgHost.innerHTML = "";
+    svgHost.appendChild(svg);
+    currentSvgDoc = svg;
+
+    // Applica subito settaggi correnti
+    applyAll();
+  }
+
+  function setFill(el, hex){
+    // set sia fill attr che eventuale style fill:
+    el.setAttribute("fill", hex);
+    const style = el.getAttribute("style");
+    if(style && style.includes("fill:")){
+      el.setAttribute("style", style.replace(/fill\s*:\s*[^;]+/i, `fill:${hex}`));
+    }
+  }
+
+  function getElementFill(el){
+    // prova a leggere fill da attr o style
+    const f = el.getAttribute("fill");
+    if(f && f !== "none") return f;
+    const style = el.getAttribute("style") || "";
+    const m = style.match(/fill\s*:\s*([^;]+)/i);
+    if(m) return m[1].trim();
+    return null;
+  }
+
+  function recolorSvg(svg, colors){
+    pill1.classList.remove("on"); pill2.classList.add("on"); pill3.classList.remove("on");
+
+    const all = svg.querySelectorAll("*");
+
+    all.forEach(el => {
+      const id = (el.getAttribute("id") || "").toLowerCase();
+
+      // Priorità: id del tipo colore_1..., colore_2..., colore_3...
+      if(id.startsWith("colore_1")) return setFill(el, colors.c1);
+      if(id.startsWith("colore_2")) return setFill(el, colors.c2);
+      if(id.startsWith("colore_3")) return setFill(el, colors.c3);
+
+      // Fallback: se non ha id colore_*, usa placeholder per rimpiazzare
+      const f = getElementFill(el);
+      if(!f) return;
+
+      const fl = f.toLowerCase();
+      if(fl === PLACEHOLDER.c1) setFill(el, colors.c1);
+      else if(fl === PLACEHOLDER.c2) setFill(el, colors.c2);
+      else if(fl === PLACEHOLDER.c3) setFill(el, colors.c3);
+    });
+  }
+
+  function ensureOverlayLayer(svg){
+    let g = svg.querySelector("#__overlay_texts__");
+    if(!g){
+      g = document.createElementNS("http://www.w3.org/2000/svg", "g");
+      g.setAttribute("id", "__overlay_texts__");
+      svg.appendChild(g);
+    }
+    // pulisci layer
+    g.innerHTML = "";
+    return g;
+  }
+
+  function addText(svg, text, x, y, options={}){
+    const t = document.createElementNS("http://www.w3.org/2000/svg", "text");
+    t.textContent = text;
+    t.setAttribute("x", x);
+    t.setAttribute("y", y);
+    t.setAttribute("text-anchor", options.anchor || "middle");
+    t.setAttribute("dominant-baseline", "middle");
+    t.setAttribute("font-family", options.font || "Arial, sans-serif");
+    t.setAttribute("font-weight", options.weight || "700");
+    t.setAttribute("font-size", options.size || "4.2");
+    t.setAttribute("fill", options.fill || "#000000");
+    if(options.transform) t.setAttribute("transform", options.transform);
+    return t;
+  }
+
+  function bboxCenter(el){
+    try{
+      const b = el.getBBox();
+      return { cx: b.x + b.width/2, cy: b.y + b.height/2, b };
+    } catch(e){
+      return null;
+    }
+  }
+
+  function applyTexts(svg, colors, name, initials){
+    pill1.classList.remove("on"); pill2.classList.remove("on"); pill3.classList.add("on");
+
+    const overlay = ensureOverlayLayer(svg);
+
+    // Colore testo: scegliamo nero o bianco in base a Colore 1/2 (per leggibilità semplice)
+    function textColorOn(hex){
+      // luminanza rapida
+      const h = hex.replace("#","").trim();
+      const r = parseInt(h.substring(0,2),16), g = parseInt(h.substring(2,4),16), b = parseInt(h.substring(4,6),16);
+      const lum = (0.2126*r + 0.7152*g + 0.0722*b);
+      return lum < 140 ? "#FFFFFF" : "#000000";
+    }
+
+    // --- Nome sul taschino ---
+    const pocketEl =
+      svg.querySelector("#colore_1_taschino") ||
+      svg.querySelector("[id*='taschino']") ||
+      null;
+
+    if(name && pocketEl){
+      const c = bboxCenter(pocketEl);
+      if(c){
+        const fill = textColorOn(colors.c1); // di solito taschino è colore_1
+        const size = Math.max(3.2, Math.min(5.0, c.b.width / 6)); // scala semplice
+        overlay.appendChild(addText(svg, name, c.cx, c.cy, { size: String(size), fill, weight:"700" }));
+      }
+    }
+
+    // --- Iniziali sulle maniche (destra + sinistra, se trovate) ---
+    // prova2: spesso ha "colore_1_manica" e "colore_2_manica_sinistra" ecc.
+    // prova1: ha varie maniche con id colore_1_...
+    const rightSleeve =
+      svg.querySelector("#colore_1_manica") ||
+      svg.querySelector("[id*='manica'][id*='des']") ||
+      svg.querySelector("[id*='manica']");
+
+    const leftSleeve =
+      svg.querySelector("#colore_2_manica_sinistra") ||
+      svg.querySelector("[id*='manica_sinistra']") ||
+      svg.querySelector("[id*='sinistra']");
+
+    if(initials){
+      // mettiamo le iniziali in alto sulla manica, leggermente ruotate
+      const addOnSleeve = (el, rotDeg) => {
+        if(!el) return;
+        const c = bboxCenter(el);
+        if(!c) return;
+        const x = c.cx;
+        const y = c.b.y + c.b.height * 0.35;
+        const fill = textColorOn(getElementFill(el) || colors.c1);
+        const size = Math.max(3.6, Math.min(6.5, c.b.width / 5));
+        const transform = `rotate(${rotDeg} ${x} ${y})`;
+        overlay.appendChild(addText(svg, initials, x, y, { size: String(size), fill, weight:"800", transform }));
+      };
+
+      // rotazioni opposte per dare effetto “sleeve”
+      addOnSleeve(rightSleeve, -18);
+      addOnSleeve(leftSleeve, 18);
+    }
+  }
+
+  function applyAll(){
+    if(!currentSvgDoc) return;
+
+    const colors = { c1: c1Sel.value, c2: c2Sel.value, c3: c3Sel.value };
+    recolorSvg(currentSvgDoc, colors);
+
+    // testi
+    const name = (pocketName.value || "").trim();
+    const init = (sleeveInit.value || "").trim().toUpperCase();
+    applyTexts(currentSvgDoc, colors, name, init);
+  }
+
+  // ====== Events ======
+  modelSelect.addEventListener("change", () => loadModel(modelSelect.value));
+  applyBtn.addEventListener("click", applyAll);
+
+  // Applica live quando cambi colori/testi (più comodo)
+  [c1Sel, c2Sel, c3Sel, pocketName, sleeveInit].forEach(el => {
+    el.addEventListener("input", applyAll);
+    el.addEventListener("change", applyAll);
+  });
+
+  resetBtn.addEventListener("click", () => {
+    modelSelect.value = "prova2puro.svg";
+    c1Sel.value = "#FF0000";
+    c2Sel.value = "#FFFFFF";
+    c3Sel.value = "#000000";
+    pocketName.value = "";
+    sleeveInit.value = "";
+    loadModel(modelSelect.value);
+  });
+
+  // ====== Start ======
+  loadModel(modelSelect.value);
+</script>
+</body>
+</html>

@@ -1,0 +1,1472 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="94.880516mm"
+   height="93.022102mm"
+   viewBox="0 0 94.880516 93.022102"
+   version="1.1"
+   id="svg6131"
+   sodipodi:docname="prova1puro.svg"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview6133"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="2.0913616"
+     inkscape:cx="181.69981"
+     inkscape:cy="161.37812"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs6128">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath924">
+      <path
+         style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:0.0915907px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 43.181564,21.348347 c -3.671253,2.948311 -14.736879,7.145455 -19.77017,9.08071 1.311999,2.110486 2.860786,3.93283 2.595213,5.705766 -0.720104,4.80753 -0.703757,10.747317 1.346449,12.797015 0.411041,0.93708 1.036741,1.763591 1.308473,2.736464 1.169035,4.185393 0.481508,7.044433 1.280809,12.966983 0.319508,1.699834 0.03713,3.709254 0.357722,5.319302 0.590364,2.964887 1.335918,5.716262 1.116488,8.295696 -0.45793,5.382884 -1.527566,7.931242 -0.707723,12.322709 0.654513,3.505901 -0.359833,7.011734 -0.765752,10.681368 l -1.42072,12.84396 23.742084,0.11446 23.37045,0.43837 -1.049097,-13.39679 c -0.288224,-3.680564 -1.420278,-7.175467 -0.765754,-10.681368 0.819854,-4.391467 -0.249801,-6.939825 -0.707718,-12.322709 -0.219443,-2.579434 0.526111,-5.330809 1.116483,-8.295696 0.320596,-1.610048 0.03821,-3.619468 0.357733,-5.319302 0.799295,-5.92255 0.111757,-8.78159 1.280789,-12.966983 0.271733,-0.972873 0.897441,-1.799384 1.308476,-2.736464 2.050209,-2.049698 2.06655,-7.989485 1.346433,-12.797015 -0.265549,-1.772936 1.283232,-3.59528 2.595227,-5.705766 -5.033288,-1.935255 -17.263886,-6.732104 -20.935159,-9.68042 -7.155027,4.088419 -3.772678,3.980789 -8.283988,4.056893 -3.306704,-1.937718 -4.715862,-0.509746 -8.716748,-3.457183 z"
+         id="path926"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ccscacsssscccsssscacscccc"
+         inkscape:export-filename="C:\Users\gianky\Desktop\tutto gianchi\equitrotting\sito\2019\foto\come prendere le misure\giubba.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1033">
+      <path
+         style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.0915907px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 139.42664,23.037398 c -3.67126,2.948311 -13.71443,5.361638 -18.74772,7.296893 1.31199,2.11047 2.86078,3.932828 2.59521,5.705764 -0.7201,4.807529 -0.70374,10.747327 1.34644,12.797046 0.41105,0.937049 1.03677,1.763546 1.30848,2.73643 1.16904,4.185396 0.48152,7.044425 1.2808,12.966985 0.31952,1.699853 0.0371,3.709255 0.35774,5.319289 0.59039,2.9649 1.33592,5.71626 1.11648,8.295707 -0.45792,5.382887 -1.52756,7.931245 -0.70774,12.322712 0.65454,3.505898 -0.35981,7.01172 -0.76574,10.681366 l -1.42072,12.84393 23.74208,0.11449 23.37044,0.43834 -1.04908,-13.39676 c -0.28823,-3.680576 -1.42026,-7.175468 -0.76576,-10.681366 0.81985,-4.391467 -0.24978,-6.939825 -0.70771,-12.322712 -0.21944,-2.579447 0.52611,-5.330807 1.11649,-8.295707 0.32058,-1.610034 0.0381,-3.619436 0.35772,-5.319289 0.7993,-5.92256 0.11178,-8.781589 1.28079,-12.966985 0.27174,-0.972884 0.89744,-1.799381 1.30847,-2.73643 2.05021,-2.049719 2.06656,-7.989517 1.34645,-12.797046 -0.26557,-1.772936 1.28324,-3.595294 2.59521,-5.705764 -5.03328,-1.935255 -14.68618,-4.350521 -18.35743,-7.298838 -7.73419,-1.138388 -12.53953,-3.402477 -20.6009,0.0024 z"
+         id="path1035"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ccscacsssscccsssscacsccc"
+         inkscape:export-filename="C:\Users\gianky\Desktop\tutto gianchi\equitrotting\sito\2019\foto\come prendere le misure\giubba.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath2953-4">
+      <path
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.302374px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m -14.684437,-68.017718 c -12.069891,9.77397 -48.449972,23.687939 -64.997744,30.10349 4.313391,6.99648 9.405292,13.03774 8.53219,18.9152 -2.367478,15.9374395 -2.313728,35.62846 4.42667,42.42342 1.351341,3.106511 3.408471,5.84647 4.301831,9.07164 3.843399,13.87501 1.58304,23.35302 4.21086,42.986889 1.050441,5.63509 0.122079,12.296542 1.176081,17.633982 1.940928,9.828937 4.392049,18.949987 3.670628,27.501087 -1.505519,17.84482 -5.02213,26.2929 -2.32673,40.85107 2.151801,11.62242 -1.183039,23.24461 -2.517569,35.40991 l -4.67084,42.579 78.056073,0.37949 76.83427,1.45322 -3.449071,-44.41171 c -0.947568,-12.20155 -4.669399,-23.78749 -2.51754,-35.40991 2.695411,-14.55817 -0.821269,-23.00625 -2.326748,-40.85107 -0.72145,-8.5511 1.729679,-17.67215 3.670628,-27.501087 1.054002,-5.33744 0.125611,-11.998892 1.17611,-17.633982 2.62781,-19.633869 0.3674,-29.111879 4.210812,-42.986889 0.89336,-3.22517 2.950469,-5.965129 4.301828,-9.07164 6.740388,-6.79496 6.794128,-26.4859805 4.426638,-42.42342 -0.87306,-5.87746 4.21885,-11.91872 8.53222,-18.9152 -16.547766,-6.415551 -56.757916,-22.317599 -68.827848,-32.091569 -23.523339,13.55354 -12.403299,13.196718 -27.234979,13.44903 -10.8713696,-6.42375 -15.5041896,-1.689862 -28.65777,-11.460951 z"
+         id="path2955-71"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ccscacsssscccsssscacscccc"
+         inkscape:export-filename="C:\Users\gianky\Desktop\tutto gianchi\equitrotting\sito\2019\foto\come prendere le misure\giubba.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath2953-0-0">
+      <path
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.302374px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m -14.684437,-68.017718 c -12.069891,9.77397 -48.449972,23.687939 -64.997744,30.10349 4.313391,6.99648 9.405292,13.03774 8.53219,18.9152 -2.367478,15.9374395 -2.313728,35.62846 4.42667,42.42342 1.351341,3.106511 3.408471,5.84647 4.301831,9.07164 3.843399,13.87501 1.58304,23.35302 4.21086,42.986889 1.050441,5.63509 0.122079,12.296542 1.176081,17.633982 1.940928,9.828937 4.392049,18.949987 3.670628,27.501087 -1.505519,17.84482 -5.02213,26.2929 -2.32673,40.85107 2.151801,11.62242 -1.183039,23.24461 -2.517569,35.40991 l -4.67084,42.579 78.056073,0.37949 76.83427,1.45322 -3.449071,-44.41171 c -0.947568,-12.20155 -4.669399,-23.78749 -2.51754,-35.40991 2.695411,-14.55817 -0.821269,-23.00625 -2.326748,-40.85107 -0.72145,-8.5511 1.729679,-17.67215 3.670628,-27.501087 1.054002,-5.33744 0.125611,-11.998892 1.17611,-17.633982 2.62781,-19.633869 0.3674,-29.111879 4.210812,-42.986889 0.89336,-3.22517 2.950469,-5.965129 4.301828,-9.07164 6.740388,-6.79496 6.794128,-26.4859805 4.426638,-42.42342 -0.87306,-5.87746 4.21885,-11.91872 8.53222,-18.9152 -16.547766,-6.415551 -56.757916,-22.317599 -68.827848,-32.091569 -23.523339,13.55354 -12.403299,13.196718 -27.234979,13.44903 -10.8713696,-6.42375 -15.5041896,-1.689862 -28.65777,-11.460951 z"
+         id="path2955-7-4"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ccscacsssscccsssscacscccc"
+         inkscape:export-filename="C:\Users\gianky\Desktop\tutto gianchi\equitrotting\sito\2019\foto\come prendere le misure\giubba.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath2953-4-8">
+      <path
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.302374px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m -14.684437,-68.017718 c -12.069891,9.77397 -48.449972,23.687939 -64.997744,30.10349 4.313391,6.99648 9.405292,13.03774 8.53219,18.9152 -2.367478,15.9374395 -2.313728,35.62846 4.42667,42.42342 1.351341,3.106511 3.408471,5.84647 4.301831,9.07164 3.843399,13.87501 1.58304,23.35302 4.21086,42.986889 1.050441,5.63509 0.122079,12.296542 1.176081,17.633982 1.940928,9.828937 4.392049,18.949987 3.670628,27.501087 -1.505519,17.84482 -5.02213,26.2929 -2.32673,40.85107 2.151801,11.62242 -1.183039,23.24461 -2.517569,35.40991 l -4.67084,42.579 78.056073,0.37949 76.83427,1.45322 -3.449071,-44.41171 c -0.947568,-12.20155 -4.669399,-23.78749 -2.51754,-35.40991 2.695411,-14.55817 -0.821269,-23.00625 -2.326748,-40.85107 -0.72145,-8.5511 1.729679,-17.67215 3.670628,-27.501087 1.054002,-5.33744 0.125611,-11.998892 1.17611,-17.633982 2.62781,-19.633869 0.3674,-29.111879 4.210812,-42.986889 0.89336,-3.22517 2.950469,-5.965129 4.301828,-9.07164 6.740388,-6.79496 6.794128,-26.4859805 4.426638,-42.42342 -0.87306,-5.87746 4.21885,-11.91872 8.53222,-18.9152 -16.547766,-6.415551 -56.757916,-22.317599 -68.827848,-32.091569 -23.523339,13.55354 -12.403299,13.196718 -27.234979,13.44903 -10.8713696,-6.42375 -15.5041896,-1.689862 -28.65777,-11.460951 z"
+         id="path2955-71-8"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ccscacsssscccsssscacscccc"
+         inkscape:export-filename="C:\Users\gianky\Desktop\tutto gianchi\equitrotting\sito\2019\foto\come prendere le misure\giubba.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath2953-4-8-7">
+      <path
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.302374px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m -14.684437,-68.017718 c -12.069891,9.77397 -48.449972,23.687939 -64.997744,30.10349 4.313391,6.99648 9.405292,13.03774 8.53219,18.9152 -2.367478,15.9374395 -2.313728,35.62846 4.42667,42.42342 1.351341,3.106511 3.408471,5.84647 4.301831,9.07164 3.843399,13.87501 1.58304,23.35302 4.21086,42.986889 1.050441,5.63509 0.122079,12.296542 1.176081,17.633982 1.940928,9.828937 4.392049,18.949987 3.670628,27.501087 -1.505519,17.84482 -5.02213,26.2929 -2.32673,40.85107 2.151801,11.62242 -1.183039,23.24461 -2.517569,35.40991 l -4.67084,42.579 78.056073,0.37949 76.83427,1.45322 -3.449071,-44.41171 c -0.947568,-12.20155 -4.669399,-23.78749 -2.51754,-35.40991 2.695411,-14.55817 -0.821269,-23.00625 -2.326748,-40.85107 -0.72145,-8.5511 1.729679,-17.67215 3.670628,-27.501087 1.054002,-5.33744 0.125611,-11.998892 1.17611,-17.633982 2.62781,-19.633869 0.3674,-29.111879 4.210812,-42.986889 0.89336,-3.22517 2.950469,-5.965129 4.301828,-9.07164 6.740388,-6.79496 6.794128,-26.4859805 4.426638,-42.42342 -0.87306,-5.87746 4.21885,-11.91872 8.53222,-18.9152 -16.547766,-6.415551 -56.757916,-22.317599 -68.827848,-32.091569 -23.523339,13.55354 -12.403299,13.196718 -27.234979,13.44903 -10.8713696,-6.42375 -15.5041896,-1.689862 -28.65777,-11.460951 z"
+         id="path2955-71-8-3"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ccscacsssscccsssscacscccc"
+         inkscape:export-filename="C:\Users\gianky\Desktop\tutto gianchi\equitrotting\sito\2019\foto\come prendere le misure\giubba.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath47063">
+      <g
+         transform="matrix(-0.3134795,0,0,0.34915218,61.846965,54.766894)"
+         id="g47067"
+         style="fill:#ff0000;fill-opacity:1;stroke:#ffffff;stroke-opacity:1">
+        <path
+           clip-path="url(#clipPath2953-0-0)"
+           sodipodi:nodetypes="csccccc"
+           inkscape:connector-curvature="0"
+           id="path47065"
+           d="M -15.090659,210.40467 -44.236689,67.008625 c -7.669038,-37.731031 2.982792,-92.694933 37.2876814,-104.208409 -9.0683954,-9.407322 -10.7092104,-19.804988 -7.7354294,-30.817933 l -71.376351,0.996622 50.781212,276.891225 z"
+           style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           transform="translate(-0.36022426)" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath47063-7">
+      <g
+         transform="matrix(-0.3134795,0,0,0.34915218,61.846965,54.766894)"
+         id="g47067-8"
+         style="fill:#ff0000;fill-opacity:1;stroke:#ffffff;stroke-opacity:1">
+        <path
+           clip-path="url(#clipPath2953-0-0)"
+           sodipodi:nodetypes="csccccc"
+           inkscape:connector-curvature="0"
+           id="path47065-5"
+           d="M -15.090659,210.40467 -44.236689,67.008625 c -7.669038,-37.731031 2.982792,-92.694933 37.2876814,-104.208409 -9.0683954,-9.407322 -10.7092104,-19.804988 -7.7354294,-30.817933 l -71.376351,0.996622 50.781212,276.891225 z"
+           style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           transform="translate(-0.36022426)" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath47063-4">
+      <g
+         transform="matrix(-0.3134795,0,0,0.34915218,61.846965,54.766894)"
+         id="g47067-9"
+         style="fill:#ff0000;fill-opacity:1;stroke:#ffffff;stroke-opacity:1">
+        <path
+           clip-path="url(#clipPath2953-0-0)"
+           sodipodi:nodetypes="csccccc"
+           inkscape:connector-curvature="0"
+           id="path47065-4"
+           d="M -15.090659,210.40467 -44.236689,67.008625 c -7.669038,-37.731031 2.982792,-92.694933 37.2876814,-104.208409 -9.0683954,-9.407322 -10.7092104,-19.804988 -7.7354294,-30.817933 l -71.376351,0.996622 50.781212,276.891225 z"
+           style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           transform="translate(-0.36022426)" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath47063-7-1">
+      <g
+         transform="matrix(-0.3134795,0,0,0.34915218,61.846965,54.766894)"
+         id="g47067-8-7"
+         style="fill:#ff0000;fill-opacity:1;stroke:#ffffff;stroke-opacity:1">
+        <path
+           clip-path="url(#clipPath2953-0-0)"
+           sodipodi:nodetypes="csccccc"
+           inkscape:connector-curvature="0"
+           id="path47065-5-7"
+           d="M -15.090659,210.40467 -44.236689,67.008625 c -7.669038,-37.731031 2.982792,-92.694933 37.2876814,-104.208409 -9.0683954,-9.407322 -10.7092104,-19.804988 -7.7354294,-30.817933 l -71.376351,0.996622 50.781212,276.891225 z"
+           style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           transform="translate(-0.36022426)" />
+      </g>
+    </clipPath>
+    <clipPath
+       id="SVGID_370_-0">
+      <use
+         xlink:href="#SVGID_369_"
+         overflow="visible"
+         id="use17456" />
+    </clipPath>
+    <clipPath
+       id="clipPath6783">
+      <use
+         xlink:href="#SVGID_369_"
+         overflow="visible"
+         id="use6781" />
+    </clipPath>
+    <clipPath
+       id="clipPath6787">
+      <use
+         xlink:href="#SVGID_369_"
+         overflow="visible"
+         id="use6785" />
+    </clipPath>
+    <clipPath
+       id="SVGID_442_-0">
+      <use
+         xlink:href="#SVGID_441_"
+         overflow="visible"
+         id="use24156" />
+    </clipPath>
+    <clipPath
+       id="clipPath6793">
+      <use
+         xlink:href="#SVGID_441_"
+         overflow="visible"
+         id="use6791" />
+    </clipPath>
+    <clipPath
+       id="clipPath6797">
+      <use
+         xlink:href="#SVGID_441_"
+         overflow="visible"
+         id="use6795" />
+    </clipPath>
+    <clipPath
+       id="SVGID_386_-89">
+      <use
+         xlink:href="#SVGID_385_"
+         overflow="visible"
+         id="use17990" />
+    </clipPath>
+    <clipPath
+       id="clipPath6803">
+      <use
+         xlink:href="#SVGID_385_"
+         overflow="visible"
+         id="use6801" />
+    </clipPath>
+    <clipPath
+       id="clipPath6807">
+      <use
+         xlink:href="#SVGID_385_"
+         overflow="visible"
+         id="use6805" />
+    </clipPath>
+    <clipPath
+       id="SVGID_388_-5">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use18000" />
+    </clipPath>
+    <clipPath
+       id="clipPath6813">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use6811" />
+    </clipPath>
+    <clipPath
+       id="clipPath6817">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use6815" />
+    </clipPath>
+    <clipPath
+       id="clipPath6821">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use6819" />
+    </clipPath>
+    <clipPath
+       id="clipPath6825">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use6823" />
+    </clipPath>
+    <clipPath
+       id="clipPath6829">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use6827" />
+    </clipPath>
+    <clipPath
+       id="clipPath6833">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use6831" />
+    </clipPath>
+    <clipPath
+       id="clipPath6837">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use6835" />
+    </clipPath>
+    <clipPath
+       id="clipPath6841">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use6839" />
+    </clipPath>
+    <clipPath
+       id="clipPath6845">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use6843" />
+    </clipPath>
+    <clipPath
+       id="clipPath6849">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use6847" />
+    </clipPath>
+    <clipPath
+       id="clipPath6853">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use6851" />
+    </clipPath>
+    <clipPath
+       id="clipPath6857">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use6855" />
+    </clipPath>
+    <clipPath
+       id="clipPath6861">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use6859" />
+    </clipPath>
+    <clipPath
+       id="clipPath6865">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use6863" />
+    </clipPath>
+    <clipPath
+       id="clipPath6869">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use6867" />
+    </clipPath>
+    <clipPath
+       id="clipPath6873">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use6871" />
+    </clipPath>
+    <clipPath
+       id="clipPath6877">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use6875" />
+    </clipPath>
+    <clipPath
+       id="clipPath6881">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use6879" />
+    </clipPath>
+    <clipPath
+       id="clipPath6885">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use6883" />
+    </clipPath>
+    <clipPath
+       id="clipPath6889">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use6887" />
+    </clipPath>
+    <clipPath
+       id="clipPath6893">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use6891" />
+    </clipPath>
+    <clipPath
+       id="clipPath6897">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use6895" />
+    </clipPath>
+    <clipPath
+       id="clipPath6901">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use6899" />
+    </clipPath>
+    <clipPath
+       id="clipPath6905">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use6903" />
+    </clipPath>
+    <clipPath
+       id="clipPath6909">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use6907" />
+    </clipPath>
+    <clipPath
+       id="clipPath6913">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use6911" />
+    </clipPath>
+    <clipPath
+       id="clipPath6917">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use6915" />
+    </clipPath>
+    <clipPath
+       id="clipPath6921">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use6919" />
+    </clipPath>
+    <clipPath
+       id="clipPath6925">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use6923" />
+    </clipPath>
+    <clipPath
+       id="clipPath6929">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use6927" />
+    </clipPath>
+    <clipPath
+       id="clipPath6933">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use6931" />
+    </clipPath>
+    <clipPath
+       id="clipPath6937">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use6935" />
+    </clipPath>
+    <clipPath
+       id="clipPath6941">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use6939" />
+    </clipPath>
+    <clipPath
+       id="clipPath6945">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use6943" />
+    </clipPath>
+    <clipPath
+       id="clipPath6949">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use6947" />
+    </clipPath>
+    <clipPath
+       id="clipPath6953">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use6951" />
+    </clipPath>
+    <clipPath
+       id="clipPath6957">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use6955" />
+    </clipPath>
+    <clipPath
+       id="clipPath6961">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use6959" />
+    </clipPath>
+    <clipPath
+       id="clipPath6965">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use6963" />
+    </clipPath>
+    <clipPath
+       id="clipPath6969">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use6967" />
+    </clipPath>
+    <clipPath
+       id="clipPath6973">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use6971" />
+    </clipPath>
+    <clipPath
+       id="clipPath6977">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use6975" />
+    </clipPath>
+    <clipPath
+       id="clipPath6981">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use6979" />
+    </clipPath>
+    <clipPath
+       id="clipPath6985">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use6983" />
+    </clipPath>
+    <clipPath
+       id="clipPath6989">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use6987" />
+    </clipPath>
+    <clipPath
+       id="clipPath6993">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use6991" />
+    </clipPath>
+    <clipPath
+       id="clipPath6997">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use6995" />
+    </clipPath>
+    <clipPath
+       id="clipPath7001">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use6999" />
+    </clipPath>
+    <clipPath
+       id="clipPath7005">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7003" />
+    </clipPath>
+    <clipPath
+       id="clipPath7009">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7007" />
+    </clipPath>
+    <clipPath
+       id="clipPath7013">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7011" />
+    </clipPath>
+    <clipPath
+       id="clipPath7017">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7015" />
+    </clipPath>
+    <clipPath
+       id="clipPath7021">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7019" />
+    </clipPath>
+    <clipPath
+       id="clipPath7025">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7023" />
+    </clipPath>
+    <clipPath
+       id="clipPath7029">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7027" />
+    </clipPath>
+    <clipPath
+       id="clipPath7033">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7031" />
+    </clipPath>
+    <clipPath
+       id="clipPath7037">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7035" />
+    </clipPath>
+    <clipPath
+       id="clipPath7041">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7039" />
+    </clipPath>
+    <clipPath
+       id="clipPath7045">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7043" />
+    </clipPath>
+    <clipPath
+       id="clipPath7049">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7047" />
+    </clipPath>
+    <clipPath
+       id="clipPath7053">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7051" />
+    </clipPath>
+    <clipPath
+       id="clipPath7057">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7055" />
+    </clipPath>
+    <clipPath
+       id="clipPath7061">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7059" />
+    </clipPath>
+    <clipPath
+       id="clipPath7065">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7063" />
+    </clipPath>
+    <clipPath
+       id="clipPath7069">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7067" />
+    </clipPath>
+    <clipPath
+       id="clipPath7073">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7071" />
+    </clipPath>
+    <clipPath
+       id="SVGID_370_-0-8">
+      <use
+         xlink:href="#SVGID_369_"
+         overflow="visible"
+         id="use17456-1" />
+    </clipPath>
+    <clipPath
+       id="clipPath7079">
+      <use
+         xlink:href="#SVGID_369_"
+         overflow="visible"
+         id="use7077" />
+    </clipPath>
+    <clipPath
+       id="clipPath7083">
+      <use
+         xlink:href="#SVGID_369_"
+         overflow="visible"
+         id="use7081" />
+    </clipPath>
+    <clipPath
+       id="SVGID_442_-0-3">
+      <use
+         xlink:href="#SVGID_441_"
+         overflow="visible"
+         id="use24156-8" />
+    </clipPath>
+    <clipPath
+       id="clipPath7089">
+      <use
+         xlink:href="#SVGID_441_"
+         overflow="visible"
+         id="use7087" />
+    </clipPath>
+    <clipPath
+       id="clipPath7093">
+      <use
+         xlink:href="#SVGID_441_"
+         overflow="visible"
+         id="use7091" />
+    </clipPath>
+    <clipPath
+       id="SVGID_386_-89-8">
+      <use
+         xlink:href="#SVGID_385_"
+         overflow="visible"
+         id="use17990-8" />
+    </clipPath>
+    <clipPath
+       id="clipPath7099">
+      <use
+         xlink:href="#SVGID_385_"
+         overflow="visible"
+         id="use7097" />
+    </clipPath>
+    <clipPath
+       id="clipPath7103">
+      <use
+         xlink:href="#SVGID_385_"
+         overflow="visible"
+         id="use7101" />
+    </clipPath>
+    <clipPath
+       id="SVGID_388_-5-0">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use18000-6" />
+    </clipPath>
+    <clipPath
+       id="clipPath7109">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7107" />
+    </clipPath>
+    <clipPath
+       id="clipPath7113">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7111" />
+    </clipPath>
+    <clipPath
+       id="clipPath7117">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7115" />
+    </clipPath>
+    <clipPath
+       id="clipPath7121">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7119" />
+    </clipPath>
+    <clipPath
+       id="clipPath7125">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7123" />
+    </clipPath>
+    <clipPath
+       id="clipPath7129">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7127" />
+    </clipPath>
+    <clipPath
+       id="clipPath7133">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7131" />
+    </clipPath>
+    <clipPath
+       id="clipPath7137">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7135" />
+    </clipPath>
+    <clipPath
+       id="clipPath7141">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7139" />
+    </clipPath>
+    <clipPath
+       id="clipPath7145">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7143" />
+    </clipPath>
+    <clipPath
+       id="clipPath7149">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7147" />
+    </clipPath>
+    <clipPath
+       id="clipPath7153">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7151" />
+    </clipPath>
+    <clipPath
+       id="clipPath7157">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7155" />
+    </clipPath>
+    <clipPath
+       id="clipPath7161">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7159" />
+    </clipPath>
+    <clipPath
+       id="clipPath7165">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7163" />
+    </clipPath>
+    <clipPath
+       id="clipPath7169">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7167" />
+    </clipPath>
+    <clipPath
+       id="clipPath7173">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7171" />
+    </clipPath>
+    <clipPath
+       id="clipPath7177">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7175" />
+    </clipPath>
+    <clipPath
+       id="clipPath7181">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7179" />
+    </clipPath>
+    <clipPath
+       id="clipPath7185">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7183" />
+    </clipPath>
+    <clipPath
+       id="clipPath7189">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7187" />
+    </clipPath>
+    <clipPath
+       id="clipPath7193">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7191" />
+    </clipPath>
+    <clipPath
+       id="clipPath7197">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7195" />
+    </clipPath>
+    <clipPath
+       id="clipPath7201">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7199" />
+    </clipPath>
+    <clipPath
+       id="clipPath7205">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7203" />
+    </clipPath>
+    <clipPath
+       id="clipPath7209">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7207" />
+    </clipPath>
+    <clipPath
+       id="clipPath7213">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7211" />
+    </clipPath>
+    <clipPath
+       id="clipPath7217">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7215" />
+    </clipPath>
+    <clipPath
+       id="clipPath7221">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7219" />
+    </clipPath>
+    <clipPath
+       id="clipPath7225">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7223" />
+    </clipPath>
+    <clipPath
+       id="clipPath7229">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7227" />
+    </clipPath>
+    <clipPath
+       id="clipPath7233">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7231" />
+    </clipPath>
+    <clipPath
+       id="clipPath7237">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7235" />
+    </clipPath>
+    <clipPath
+       id="clipPath7241">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7239" />
+    </clipPath>
+    <clipPath
+       id="clipPath7245">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7243" />
+    </clipPath>
+    <clipPath
+       id="clipPath7249">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7247" />
+    </clipPath>
+    <clipPath
+       id="clipPath7253">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7251" />
+    </clipPath>
+    <clipPath
+       id="clipPath7257">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7255" />
+    </clipPath>
+    <clipPath
+       id="clipPath7261">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7259" />
+    </clipPath>
+    <clipPath
+       id="clipPath7265">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7263" />
+    </clipPath>
+    <clipPath
+       id="clipPath7269">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7267" />
+    </clipPath>
+    <clipPath
+       id="clipPath7273">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7271" />
+    </clipPath>
+    <clipPath
+       id="clipPath7277">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7275" />
+    </clipPath>
+    <clipPath
+       id="clipPath7281">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7279" />
+    </clipPath>
+    <clipPath
+       id="clipPath7285">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7283" />
+    </clipPath>
+    <clipPath
+       id="clipPath7289">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7287" />
+    </clipPath>
+    <clipPath
+       id="clipPath7293">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7291" />
+    </clipPath>
+    <clipPath
+       id="clipPath7297">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7295" />
+    </clipPath>
+    <clipPath
+       id="clipPath7301">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7299" />
+    </clipPath>
+    <clipPath
+       id="clipPath7305">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7303" />
+    </clipPath>
+    <clipPath
+       id="clipPath7309">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7307" />
+    </clipPath>
+    <clipPath
+       id="clipPath7313">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7311" />
+    </clipPath>
+    <clipPath
+       id="clipPath7317">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7315" />
+    </clipPath>
+    <clipPath
+       id="clipPath7321">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7319" />
+    </clipPath>
+    <clipPath
+       id="clipPath7325">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7323" />
+    </clipPath>
+    <clipPath
+       id="clipPath7329">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7327" />
+    </clipPath>
+    <clipPath
+       id="clipPath7333">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7331" />
+    </clipPath>
+    <clipPath
+       id="clipPath7337">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7335" />
+    </clipPath>
+    <clipPath
+       id="clipPath7341">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7339" />
+    </clipPath>
+    <clipPath
+       id="clipPath7345">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7343" />
+    </clipPath>
+    <clipPath
+       id="clipPath7349">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7347" />
+    </clipPath>
+    <clipPath
+       id="clipPath7353">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7351" />
+    </clipPath>
+    <clipPath
+       id="clipPath7357">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7355" />
+    </clipPath>
+    <clipPath
+       id="clipPath7361">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7359" />
+    </clipPath>
+    <clipPath
+       id="clipPath7365">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7363" />
+    </clipPath>
+    <clipPath
+       id="clipPath7369">
+      <use
+         xlink:href="#SVGID_387_"
+         overflow="visible"
+         id="use7367" />
+    </clipPath>
+    <rect
+       id="rect18033"
+       x="95.639"
+       y="332.38599"
+       width="33.563"
+       height="19.577999" />
+    <rect
+       id="rect18044"
+       x="512.62903"
+       y="256.10501"
+       width="33.563999"
+       height="19.577" />
+    <rect
+       id="rect18055"
+       x="512.62903"
+       y="294.24399"
+       width="33.563"
+       height="19.579" />
+    <rect
+       id="rect18062"
+       x="512.62903"
+       y="294.24399"
+       width="33.563"
+       height="19.579" />
+    <rect
+       id="rect18165"
+       x="95.639"
+       y="332.38599"
+       width="33.563"
+       height="19.577999" />
+    <rect
+       id="rect18176"
+       x="512.62903"
+       y="256.10501"
+       width="33.563999"
+       height="19.577" />
+    <rect
+       id="rect18187"
+       x="512.62903"
+       y="294.24399"
+       width="33.563"
+       height="19.579" />
+    <rect
+       id="rect18194"
+       x="512.62903"
+       y="294.24399"
+       width="33.563"
+       height="19.579" />
+  </defs>
+  <g
+     inkscape:label="Livello 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-10.145272,-9.5308907)">
+    <path
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="C:\Users\gianky\Desktop\tutto gianchi\equitrotting\sito\2019\foto\come prendere le misure\giubba.png"
+       sodipodi:nodetypes="ccccccc"
+       inkscape:connector-curvature="0"
+       id="colore_1_manica_sinistra"
+       d="m 85.330113,22.115808 c 10.311571,4.073909 9.179817,11.962315 9.601931,19.332761 3.209649,7.762714 9.601386,39.397947 10.045826,41.81405 0.16885,2.073306 -7.237659,2.580324 -9.141475,4.234865 -2.439329,-11.765569 -3.174169,-14.628307 -8.81267,-30.122415 -9.201605,-17.69471 -6.884583,-19.3397 -7.273408,-22.927419 0.831916,-6.456761 1.050345,-9.264497 5.579796,-12.331842 z"
+       style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.0902195px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       style="fill:#000000;stroke:#000000;stroke-width:0.078944px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 95.836395,87.497484 c 3.876745,-1.227288 8.814185,-2.218836 9.141475,-4.234865 l -3.8794,-17.762527 -1.414141,13.670225 -5.185255,1.728439 z"
+       id="colore_2_polso_sinistro"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccc" />
+    <path
+       style="color:#000000;fill:#ffffff;-inkscape-stroke:none"
+       d="m 100.86914,63.96875 -1.705078,15.044922 -4.054687,1.199219 0.169922,0.572265 4.433594,-1.310547 1.748049,-15.439453 z"
+       id="colore_3_profilo_polso_sinistro" />
+    <path
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="C:\Users\gianky\Desktop\tutto gianchi\equitrotting\sito\2019\foto\come prendere le misure\giubba.png"
+       sodipodi:nodetypes="ccccccc"
+       inkscape:connector-curvature="0"
+       id="colore_1_manica_destra"
+       d="m 29.84098,22.240809 c -10.311597,4.073909 -9.179846,11.962314 -9.601913,19.332733 -3.209703,7.762733 -9.601409,39.397975 -10.045879,41.814068 -0.168801,2.073316 7.237658,2.580306 9.141474,4.234838 2.439365,-11.76557 3.174167,-14.628279 8.812696,-30.122415 C 37.348935,39.805351 35.031941,38.16037 35.420748,34.572661 34.588823,28.11589 34.37044,25.308154 29.84098,22.240809 Z"
+       style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.0902195px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       style="fill:#000000;stroke:#000000;stroke-width:0.078944px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 19.334662,87.622448 C 16.262427,86.311145 12.665033,87.100476 10.193188,83.38761 l 3.879404,-17.762517 1.414174,13.670225 5.185253,1.72843 z"
+       id="colore_2_polso_destro"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccc" />
+    <path
+       style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:0.087348px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 49.182918,13.527642 c -3.501173,2.811747 -14.054209,6.814472 -18.85434,8.660087 1.251213,2.012709 2.728251,3.750643 2.475004,5.441458 -0.686769,4.584816 -0.671155,10.24946 1.284062,12.204192 0.391987,0.893688 0.988693,1.681902 1.247845,2.609704 0.297518,1.065156 0.468949,2.040234 0.574885,3.004792 2.584698,19.055218 1.47951,36.760627 -0.707608,56.533265 l 22.642282,0.10917 22.287845,0.41809 c -2.203074,-20.708076 -2.6637,-37.725376 -0.306291,-57.060525 0.107883,-0.837389 0.270833,-2.084192 0.527967,-3.004792 0.259146,-0.927803 0.855858,-1.716016 1.247855,-2.609704 1.955254,-1.954732 1.970821,-7.619376 1.28409,-12.204192 -0.253276,-1.690815 1.223791,-3.428749 2.474975,-5.441458 -4.800102,-1.845615 -16.464138,-6.420283 -19.965376,-9.232011 -6.823575,3.899046 -3.597885,3.796374 -7.900223,3.868957 -3.153517,-1.847947 -4.497412,-0.486107 -8.312972,-3.297033 z"
+       id="colore_2_corpo"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccscscccccscscccc"
+       inkscape:export-filename="C:\Users\gianky\Desktop\tutto gianchi\equitrotting\sito\2019\foto\come prendere le misure\giubba.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#ff0000;fill-rule:evenodd;stroke:none;stroke-width:0.087348px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 49.182917,13.527642 c -3.501173,2.811747 -14.054209,6.814472 -18.85434,8.660087 1.251213,2.012709 2.728251,3.750643 2.475004,5.441458 -0.686769,4.584816 -0.671155,10.24946 1.284062,12.204192 0.391987,0.893688 1.517879,5.386064 1.777012,6.313871 h 43.960746 c 0.259133,-0.927807 1.385025,-5.420183 1.777022,-6.313871 1.955257,-1.954732 1.970817,-7.619376 1.28409,-12.204192 -0.253276,-1.690815 1.223787,-3.428749 2.474977,-5.441458 -4.800104,-1.845615 -16.46414,-6.420283 -19.965378,-9.232011 -6.823575,3.899046 -3.597885,3.796374 -7.900223,3.868957 -3.153517,-1.847947 -4.497412,-0.486107 -8.312972,-3.297033 z"
+       id="colore_1_carre"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccsccccscccc"
+       inkscape:export-filename="C:\Users\gianky\Desktop\tutto gianchi\equitrotting\sito\2019\foto\come prendere le misure\giubba.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:0.99;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#999999;stroke-width:0.128948;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       id="rect2028-7"
+       width="8.2180347"
+       height="85.758705"
+       x="53.011501"
+       y="16.479614" />
+    <path
+       style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:0.099041;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 49.068289,13.445574 49.276497,9.7287224 C 57.555182,16.24388 61.357152,12.399836 65.621379,9.6255001 l -0.208226,3.9233329 c -3.052309,6.241839 -10.65444,10.330018 -16.344864,-0.103259 z"
+       id="colore_2_collo"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="C:\Users\gianky\Desktop\tutto gianchi\equitrotting\sito\2019\foto\come prendere le misure\giubba.png" />
+    <rect
+       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.519946;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:fill markers stroke;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       id="colore_1_manica_bretella_2"
+       width="7.2849479"
+       height="49.428051"
+       x="66.271301"
+       y="46.590305" />
+    <path
+       style="color:#000000;fill:#ffffff;-inkscape-stroke:none"
+       d="m 14.302734,64.09375 -0.59375,0.06641 1.75,15.439453 4.433594,1.310547 0.169922,-0.572265 -4.054688,-1.199219 z"
+       id="colore_3_profilo_polso_destro" />
+    <rect
+       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.519946;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:fill markers stroke;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       id="colore_1_manica_bretella_1"
+       width="7.2849479"
+       height="49.428055"
+       x="42.039169"
+       y="46.063126" />
+    <path
+       style="fill:#ff0000;stroke:#000000;stroke-width:0.087348px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 35.958171,93.69335 h 43.206371 l 0.968351,8.81505 -44.930127,-0.52726 z"
+       id="colore_1_vita"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\gianky\Desktop\tutto gianchi\equitrotting\sito\2019\foto\come prendere le misure\giubba.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="color:#000000;fill:#ff0000;fill-rule:evenodd;-inkscape-stroke:none"
+       d="m 65.720703,9.5332031 c -2.672087,1.8678009 -5.324488,3.2580699 -8,3.4902349 -2.675512,0.232164 -5.393104,-0.671018 -8.277344,-3.4667974 l -0.332031,0.34375 c 2.955831,2.8651754 5.839411,3.8415754 8.650391,3.5976564 2.81098,-0.24392 5.530267,-1.685402 8.232422,-3.5742189 z"
+       id="colore_1_profilo_collo" />
+    <path
+       style="color:#000000;fill:#ffffff;fill-rule:evenodd;-inkscape-stroke:none"
+       d="m 65.831215,10.076423 c -2.672087,1.867801 -5.324488,3.25807 -8,3.490235 -2.675512,0.232164 -5.393104,-0.671018 -8.277344,-3.466798 l -0.332031,0.34375 c 2.955831,2.865176 5.839411,3.841576 8.650391,3.597657 2.81098,-0.24392 5.530267,-1.685402 8.232422,-3.574219 z"
+       id="colore_3_profilo_collo" />
+    <rect
+       style="fill:#ffffff;stroke:none;stroke-width:0.211363;stroke-dasharray:none"
+       id="colore_3_profilo_vita"
+       width="43.674488"
+       height="0.47683841"
+       x="35.958179"
+       y="93.693398"
+       ry="0.0088047953" />
+    <rect
+       style="fill:#ffffff;fill-rule:evenodd;stroke:none;stroke-width:0.419366;stroke-linecap:square;stroke-miterlimit:5;paint-order:fill markers stroke;stop-color:#000000"
+       id="colore_3_bretella_1"
+       width="0.5"
+       height="47.664505"
+       x="41.645721"
+       y="46.334263" />
+    <rect
+       style="fill:#ffffff;fill-rule:evenodd;stroke:none;stroke-width:0.403482;stroke-linecap:square;stroke-miterlimit:5;paint-order:fill markers stroke;stop-color:#000000"
+       id="colore_3_profilo_carr__"
+       width="0.5"
+       height="44.122154"
+       x="45.910244"
+       y="-79.958275"
+       transform="rotate(90)" />
+    <rect
+       style="fill:#ffffff;fill-rule:evenodd;stroke:none;stroke-width:0.419366;stroke-linecap:square;stroke-miterlimit:5;paint-order:fill markers stroke;stop-color:#000000"
+       id="colore_3_bretella_2"
+       width="0.5"
+       height="47.664505"
+       x="49.309639"
+       y="46.334263" />
+    <rect
+       style="fill:#ffffff;fill-rule:evenodd;stroke:none;stroke-width:0.417972;stroke-linecap:square;stroke-miterlimit:5;paint-order:fill markers stroke;stop-color:#000000"
+       id="colore_3_bretella_4"
+       width="0.5"
+       height="47.348225"
+       x="65.87944"
+       y="46.635197" />
+    <rect
+       style="fill:#ffffff;fill-rule:evenodd;stroke:none;stroke-width:0.417972;stroke-linecap:square;stroke-miterlimit:5;paint-order:fill markers stroke;stop-color:#000000"
+       id="colore_3_bretella_3"
+       width="0.5"
+       height="47.348225"
+       x="73.543358"
+       y="46.635197" />
+    <path
+       id="colore_1_taschino"
+       style="fill:#ff0000;stroke:none;stroke-width:0.486925"
+       d="m 64.673323,46.090691 h 11.137441 c 0.02584,0 0.04673,0.0208 0.04673,0.04673 v 11.613222 l -2.546672,2.87532 H 66.66849 c -0.02584,0 -2.041977,-2.87532 -2.041977,-2.87532 V 46.137419 c 0,-0.02584 0.0208,-0.04673 0.04673,-0.04673 z"
+       sodipodi:nodetypes="cssccccssc" />
+    <path
+       style="color:#000000;fill:#ffffff;-inkscape-stroke:none"
+       d="m 64.673644,45.846607 c -0.156691,0 -0.291016,0.134525 -0.291016,0.291016 v 11.689453 l 0.04492,0.0625 c 0,0 0.504174,0.720226 1.011719,1.439453 0.253772,0.359614 0.507964,0.717935 0.701171,0.988281 0.0966,0.135174 0.177605,0.247972 0.236329,0.328125 0.02936,0.04008 0.05384,0.07174 0.07227,0.0957 0.0092,0.01198 0.01642,0.02253 0.02539,0.0332 0.0045,0.0053 0.0079,0.0097 0.01758,0.01953 0.0048,0.0049 0.02495,0.02309 0.02539,0.02344 2.21e-4,1.74e-4 0.03499,0.02335 0.03516,0.02344 1.61e-4,8.7e-5 0.117086,0.0293 0.117187,0.0293 h 6.751953 l 2.679681,-3.027344 V 46.137623 c 0,-0.156691 -0.134525,-0.291016 -0.291016,-0.291016 H 64.679503 Z m 0.197265,0.488281 H 75.61505 v 11.324219 l -2.414063,2.722656 h -6.414062 c -0.0067,-0.0091 -0.01,-0.01304 -0.01758,-0.02344 -0.05648,-0.07709 -0.13638,-0.189831 -0.232422,-0.324219 -0.192085,-0.268775 -0.445727,-0.627112 -0.699219,-0.986328 -0.484324,-0.686323 -0.924724,-1.313054 -0.966796,-1.373047 z"
+       id="colore_3_taschino_basso" />
+    <path
+       style="fill:#ff0000;stroke:none;stroke-width:0.476838;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+       d="m 64.621512,46.085635 h 11.002655 v 3.235763 l -3.285168,3.029235 H 67.90349 l -3.364905,-3.029235 z"
+       id="colore_1_taschino_alto"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccc"
+       inkscape:export-filename="C:\Users\gianky\Desktop\tutto gianchi\equitrotting\sito\2019\foto\come prendere le misure\giubba.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="color:#000000;fill:#ffffff;-inkscape-stroke:none"
+       d="m 64.390989,45.847041 -0.0059,0.232421 -0.08594,3.345704 3.513672,3.164062 h 4.621094 l 3.429687,-3.162109 v -3.580078 z m 0.464844,0.476562 h 10.53125 v 2.894531 l -3.140625,2.894532 h -4.25 l -3.214844,-2.894532 z"
+       id="colore_3_taschino_alto" />
+  </g>
+</svg>
