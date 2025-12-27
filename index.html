@@ -44,11 +44,11 @@
     }
     .pill.on{ background:#1b3a78; border-color:#2d57a7; }
 
-    /* ✅ SFONDO ANTEPRIMA: sfumatura grigio chiaro -> grigio scuro */
+    /* ✅ Anteprima: grigio chiaro -> grigio scuro */
     .preview{
       min-height:520px;
       display:flex; align-items:center; justify-content:center;
-      background: linear-gradient(135deg, #eeeeee 0%, #bdbdbd 45%, #6f6f6f 100%);
+      background: linear-gradient(135deg, #eeeeee 0%, #bdbdbd 45%, #6e6e6e 100%);
       border-radius:16px;
       border:1px solid var(--line);
       overflow:hidden;
@@ -58,6 +58,41 @@
     #svgHost svg{ width:min(640px, 92%); height:auto; }
     .hint{ margin-top:8px; font-size:12px; color:var(--muted); }
     .small{ font-size:11px; color:#9db3da; }
+
+    /* ✅ Scelta modello con icone */
+    .modelGrid{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:10px;
+      margin-top:6px;
+    }
+    .modelChoice{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      padding:10px;
+      border-radius:14px;
+      border:1px solid #2a3a5c;
+      background:#0c1425;
+      cursor:pointer;
+      user-select:none;
+    }
+    .modelChoice:hover{ filter:brightness(1.06); }
+    .modelChoice img{
+      width:44px; height:44px; object-fit:contain;
+      background:#0b1020;
+      border:1px solid #243353;
+      border-radius:10px;
+      padding:4px;
+    }
+    .modelChoice .t1{ font-size:13px; color:#e9f0ff; font-weight:700; line-height:1.1; }
+    .modelChoice .t2{ font-size:11px; color:#9db3da; line-height:1.1; margin-top:2px; }
+
+    input.modelRadio{ display:none; }
+    input.modelRadio:checked + .modelChoice{
+      background:#1b3a78;
+      border-color:#2d57a7;
+    }
   </style>
 </head>
 <body>
@@ -71,15 +106,34 @@
       </div>
 
       <h2>Step 1 — Scegli il modello</h2>
-      <div class="row">
-        <label>Modello</label>
-        <select id="modelSelect">
-          <option value="prova1puro.svg">Prova 1</option>
-          <option value="prova2puro.svg" selected>Prova 2</option>
-        </select>
+
+      <!-- ✅ Radio con icone -->
+      <div class="modelGrid" role="radiogroup" aria-label="Scelta modello">
+        <div>
+          <input class="modelRadio" type="radio" name="model" id="m1" value="prova1puro.svg">
+          <label class="modelChoice" for="m1">
+            <img src="prova1icona.png" alt="Anteprima Prova 1">
+            <div>
+              <div class="t1">Prova 1</div>
+              <div class="t2">prova1puro.svg</div>
+            </div>
+          </label>
+        </div>
+
+        <div>
+          <input class="modelRadio" type="radio" name="model" id="m2" value="prova2puro.svg" checked>
+          <label class="modelChoice" for="m2">
+            <img src="prova2icona.png" alt="Anteprima Prova 2">
+            <div>
+              <div class="t1">Prova 2</div>
+              <div class="t2">prova2puro.svg</div>
+            </div>
+          </label>
+        </div>
       </div>
-      <div class="muted">
-        Carica i file <b>prova1puro.svg</b> e <b>prova2puro.svg</b> nella stessa cartella di questa pagina (oppure modifica i percorsi nel codice).
+
+      <div class="muted" style="margin-top:8px">
+        Metti nella stessa cartella: <b>prova1puro.svg</b>, <b>prova2puro.svg</b>, <b>prova1icona.png</b>, <b>prova2icona.png</b>.
       </div>
 
       <h2>Step 2 — Colori</h2>
@@ -97,7 +151,7 @@
       </div>
       <div class="small">Suggerimento: “Colore 3” spesso coincide con profili/contorni (nero di base).</div>
 
-      <h2>Step 3 — Personalizzazioni</h2>
+      <h2>Step 3 — Testi (modifica quelli già presenti nell’SVG)</h2>
       <div class="row">
         <label>Nome</label>
         <input id="pocketName" type="text" placeholder="Nome sul taschino" maxlength="18" />
@@ -113,7 +167,7 @@
       </div>
 
       <div class="hint">
-        Ora il testo non viene più “creato” dal codice: viene aggiornato SOLO sui <b>&lt;text&gt;</b> che hai già posizionato tu nell’SVG.
+        Qui non “disegniamo” testo nuovo: aggiorniamo i <b>&lt;text&gt;</b> già posizionati nei file SVG usando i loro ID.
       </div>
     </div>
 
@@ -122,7 +176,7 @@
       <div class="preview">
         <div id="svgHost" aria-label="Anteprima giubba"></div>
       </div>
-      <div class="hint">Carica questa pagina + gli SVG nella stessa cartella.</div>
+      <div class="hint">Se vedi 404, controlla che i file siano nella stessa cartella della pagina (o correggi i percorsi).</div>
     </div>
   </div>
 
@@ -146,11 +200,11 @@
     ["Grigio", "#808080"]
   ];
 
-  // Placeholder colors presenti negli SVG caricati (fallback)
+  // Placeholder colors presenti negli SVG caricati
   const PLACEHOLDER = { c1:"#ff0000", c2:"#ffffff", c3:"#000000" };
 
   // ====== DOM ======
-  const modelSelect = document.getElementById("modelSelect");
+  const modelRadios = [...document.querySelectorAll("input.modelRadio[name='model']")];
   const c1Sel = document.getElementById("c1");
   const c2Sel = document.getElementById("c2");
   const c3Sel = document.getElementById("c3");
@@ -163,6 +217,11 @@
   const pill1 = document.getElementById("pill1");
   const pill2 = document.getElementById("pill2");
   const pill3 = document.getElementById("pill3");
+
+  function currentModelUrl(){
+    const checked = modelRadios.find(r => r.checked);
+    return checked ? checked.value : "prova2puro.svg";
+  }
 
   function fillSelect(sel, defaultHex){
     sel.innerHTML = "";
@@ -245,46 +304,28 @@
     });
   }
 
-  // ✅ QUI la modifica: aggiorna i <text> già presenti nel tuo SVG
-  function applyExistingSvgTexts(svg, name, initials){
+  // ✅ Aggiorna i <text> già esistenti nell’SVG (quelli che hai posizionato tu)
+  function applyTexts(svg, name, initials){
     pill1.classList.remove("on"); pill2.classList.remove("on"); pill3.classList.add("on");
 
-    const allText = [...svg.querySelectorAll("text")];
+    const url = currentModelUrl();
 
-    const safeName = (name || "").trim();
-    const safeInit = (initials || "").trim().toUpperCase();
+    // mappa ID testo per modello (come risultano nei tuoi SVG)
+    const map = {
+      "prova1puro.svg": { nameId: "nome_colore_2", initId: "iniziali_colore_2" },
+      "prova2puro.svg": { nameId: "nome_colore_1", initId: "iniziali_colore_2" }
+    };
 
-    // Se nel tuo SVG metti ID precisi, questo è il modo migliore:
-    const byId = (id) => svg.querySelector(`#${CSS.escape(id)}`);
+    const ids = map[url] || map["prova2puro.svg"];
 
-    // --- TENTATIVI PER IL NOME ---
-    const nameTargets = [
-      byId("nome_taschino"),
-      byId("pocket_name"),
-      byId("testo_nome"),
-      ...allText.filter(t => ((t.id||"").toLowerCase().includes("nome"))),
-      ...allText.filter(t => ((t.id||"").toLowerCase().includes("tasch"))),
-      ...allText.filter(t => (t.textContent || "").trim().toUpperCase() === "NOME"),
-      ...allText.filter(t => (t.textContent || "").trim().toUpperCase() === "NAME"),
-    ].filter(Boolean);
+    const nameEl = svg.querySelector(`#${CSS.escape(ids.nameId)}`);
+    const initEl = svg.querySelector(`#${CSS.escape(ids.initId)}`);
 
-    // --- TENTATIVI PER LE INIZIALI ---
-    const initTargets = [
-      byId("iniziali_dx"),
-      byId("iniziali_sx"),
-      byId("iniziali"),
-      byId("sleeve_init"),
-      ...allText.filter(t => ((t.id||"").toLowerCase().includes("iniz"))),
-      ...allText.filter(t => (t.textContent || "").trim().toUpperCase() === "INIZIALI"),
-      ...allText.filter(t => (t.textContent || "").trim().toUpperCase() === "XX"),
-    ].filter(Boolean);
-
-    // Aggiorna solo se c’è input, altrimenti svuota (se vuoi mantenerlo, dimmelo e lo cambio)
-    for(const t of nameTargets){
-      t.textContent = safeName;
+    if(nameEl){
+      nameEl.textContent = (name || "").trim();
     }
-    for(const t of initTargets){
-      t.textContent = safeInit;
+    if(initEl){
+      initEl.textContent = (initials || "").trim().toUpperCase();
     }
   }
 
@@ -294,16 +335,13 @@
     const colors = { c1: c1Sel.value, c2: c2Sel.value, c3: c3Sel.value };
     recolorSvg(currentSvgDoc, colors);
 
-    // ✅ Testi: aggiorna quelli già presenti nel file
-    applyExistingSvgTexts(
-      currentSvgDoc,
-      pocketName.value,
-      sleeveInit.value
-    );
+    const name = pocketName.value;
+    const init = sleeveInit.value;
+    applyTexts(currentSvgDoc, name, init);
   }
 
   // ====== Events ======
-  modelSelect.addEventListener("change", () => loadModel(modelSelect.value));
+  modelRadios.forEach(r => r.addEventListener("change", () => loadModel(currentModelUrl())));
   applyBtn.addEventListener("click", applyAll);
 
   [c1Sel, c2Sel, c3Sel, pocketName, sleeveInit].forEach(el => {
@@ -312,16 +350,17 @@
   });
 
   resetBtn.addEventListener("click", () => {
-    modelSelect.value = "prova2puro.svg";
+    document.getElementById("m2").checked = true;
     c1Sel.value = "#FF0000";
     c2Sel.value = "#FFFFFF";
     c3Sel.value = "#000000";
     pocketName.value = "";
     sleeveInit.value = "";
-    loadModel(modelSelect.value);
+    loadModel(currentModelUrl());
   });
 
-  loadModel(modelSelect.value);
+  // ====== Start ======
+  loadModel(currentModelUrl());
 </script>
 </body>
 </html>
