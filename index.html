@@ -15,7 +15,7 @@
     .muted{ color:var(--muted); font-size:12px; line-height:1.3; }
     .row{ display:flex; gap:10px; align-items:center; margin:8px 0; }
     label{ font-size:12px; color:#cfe0ff; width:92px; }
-    select, input[type="text"]{
+    select, input[type="text"], input[type="number"]{
       width:100%;
       padding:10px 10px;
       border-radius:12px;
@@ -37,27 +37,62 @@
     }
     button:hover{ filter:brightness(1.08); }
     button.primary{ background:#1b3a78; border-color:#2d57a7; }
-    .step{ display:flex; gap:8px; margin:6px 0 12px; }
+    .step{ display:flex; gap:8px; margin:6px 0 12px; flex-wrap:wrap; }
     .pill{
       font-size:12px; padding:6px 10px; border-radius:999px;
       border:1px solid #2a3a5c; background:#0c1425; color:#cfe0ff;
     }
     .pill.on{ background:#1b3a78; border-color:#2d57a7; }
+
+    /* ✅ PREVIEW background grigio chiaro */
     .preview{
       min-height:520px;
       display:flex; align-items:center; justify-content:center;
-      background:radial-gradient(1200px 500px at 30% 10%, rgba(83,150,255,.14), transparent 60%),
-                 radial-gradient(900px 500px at 60% 90%, rgba(255,83,195,.08), transparent 60%);
+      background:#e9edf3; /* grigio chiaro */
       border-radius:16px;
-      border:1px solid var(--line);
+      border:1px solid rgba(0,0,0,.08);
       overflow:hidden;
       position:relative;
     }
     #svgHost svg{ width:min(640px, 92%); height:auto; }
+
     .hint{ margin-top:8px; font-size:12px; color:var(--muted); }
     .small{ font-size:11px; color:#9db3da; }
+
+    /* ✅ Model picker con icone */
+    .modelGrid{ display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:6px; }
+    .modelCard{
+      display:flex; gap:10px; align-items:center;
+      border:1px solid #2a3a5c; background:#0c1425; border-radius:14px;
+      padding:10px; cursor:pointer; user-select:none;
+    }
+    .modelCard:hover{ filter:brightness(1.08); }
+    .modelCard.on{ background:#1b3a78; border-color:#2d57a7; }
+    .modelCard img{ width:46px; height:46px; object-fit:contain; background:#ffffff; border-radius:10px; border:1px solid rgba(0,0,0,.12); }
+    .modelCard .t{ display:flex; flex-direction:column; gap:2px; }
+    .modelCard .t b{ font-size:13px; color:#e9f0ff; }
+    .modelCard .t span{ font-size:11px; color:#bcd0f5; opacity:.9; }
+
+    /* ✅ posizionamento testi */
+    .grid2{ display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+    .posBox{
+      border:1px dashed #2a3a5c;
+      background:rgba(12,20,37,.6);
+      border-radius:14px;
+      padding:10px;
+      margin-top:8px;
+    }
+    .posTitle{ font-size:12px; color:#cfe0ff; margin:0 0 8px; display:flex; justify-content:space-between; align-items:center; gap:10px; }
+    .tag{ font-size:11px; color:#9db3da; }
+    .miniBtn{
+      width:auto; padding:6px 10px; border-radius:999px;
+      border:1px solid #2a3a5c; background:#0c1425; color:#cfe0ff;
+      cursor:pointer;
+    }
+    .miniBtn.on{ background:#1b3a78; border-color:#2d57a7; }
   </style>
 </head>
+
 <body>
   <div class="wrap">
     <div class="card">
@@ -69,15 +104,34 @@
       </div>
 
       <h2>Step 1 — Scegli il modello</h2>
-      <div class="row">
-        <label>Modello</label>
-        <select id="modelSelect">
-          <option value="prova1puro.svg">Prova 1</option>
-          <option value="prova2puro.svg" selected>Prova 2</option>
-        </select>
+
+      <!-- ✅ Model picker (icone) -->
+      <div class="modelGrid" id="modelGrid">
+        <div class="modelCard" data-model="prova1puro.svg" id="card1">
+          <img src="prova1icona.png" alt="Prova 1" />
+          <div class="t">
+            <b>Prova 1</b>
+            <span>prova1puro.svg</span>
+          </div>
+        </div>
+        <div class="modelCard on" data-model="prova2puro.svg" id="card2">
+          <img src="prova2icona.png" alt="Prova 2" />
+          <div class="t">
+            <b>Prova 2</b>
+            <span>prova2puro.svg</span>
+          </div>
+        </div>
       </div>
-      <div class="muted">
-        Carica i file <b>prova1puro.svg</b> e <b>prova2puro.svg</b> nella stessa cartella di questa pagina (oppure modifica i percorsi nel codice).
+
+      <!-- mantengo select “invisibile” solo per compatibilità -->
+      <select id="modelSelect" style="display:none">
+        <option value="prova1puro.svg">Prova 1</option>
+        <option value="prova2puro.svg" selected>Prova 2</option>
+      </select>
+
+      <div class="muted" style="margin-top:10px;">
+        File richiesti nella stessa cartella:
+        <b>prova1puro.svg</b>, <b>prova2puro.svg</b>, <b>prova1icona.png</b>, <b>prova2icona.png</b>.
       </div>
 
       <h2>Step 2 — Colori</h2>
@@ -93,7 +147,7 @@
         <label>Colore 3</label>
         <select id="c3"></select>
       </div>
-      <div class="small">Suggerimento: “Colore 3” spesso coincide con profili/contorni (nero di base).</div>
+      <div class="small">Suggerimento: “Colore 3” spesso coincide con profili/contorni.</div>
 
       <h2>Step 3 — Personalizzazioni</h2>
       <div class="row">
@@ -105,14 +159,48 @@
         <input id="sleeveInit" type="text" placeholder="ES: GC" maxlength="3" />
       </div>
 
+      <!-- ✅ Posizionamento testi: drag + X/Y -->
+      <div class="posBox">
+        <div class="posTitle">
+          <span>Posizionamento testi</span>
+          <span class="tag">trascina sull’anteprima oppure usa X/Y</span>
+        </div>
+
+        <div class="row" style="justify-content:space-between;">
+          <button class="miniBtn on" id="dragToggle" type="button">Drag: ON</button>
+          <span class="small">Clicca sul testo e trascina</span>
+        </div>
+
+        <div class="grid2">
+          <div>
+            <div class="small" style="margin:6px 0 6px;">Nome taschino (X / Y)</div>
+            <div class="grid2">
+              <input id="pocketX" type="number" step="0.5" />
+              <input id="pocketY" type="number" step="0.5" />
+            </div>
+          </div>
+          <div>
+            <div class="small" style="margin:6px 0 6px;">Iniziali maniche (X / Y)</div>
+            <div class="grid2">
+              <input id="initX" type="number" step="0.5" />
+              <input id="initY" type="number" step="0.5" />
+            </div>
+          </div>
+        </div>
+
+        <div class="small" style="margin-top:8px;">
+          Nota: X/Y sono nelle “unità” dell’SVG (variano a seconda del modello). Il drag è il modo più semplice.
+        </div>
+      </div>
+
       <div class="btns">
         <button id="resetBtn">Reset</button>
         <button class="primary" id="applyBtn">Applica</button>
       </div>
 
       <div class="hint">
-        Il testo viene posizionato automaticamente usando le forme del taschino/maniche dentro l’SVG.<br/>
-        Se vuoi spostarlo/ruotarlo “a mano”, dimmelo e ti aggiungo slider di posizione/rotazione.
+        ✅ Ora puoi spostare le scritte manualmente: clicca sul testo nell’anteprima e trascina.<br/>
+        Se vuoi anche <b>rotazione</b> e <b>dimensione</b> con slider, te lo aggiungo uguale.
       </div>
     </div>
 
@@ -121,7 +209,7 @@
       <div class="preview">
         <div id="svgHost" aria-label="Anteprima giubba"></div>
       </div>
-      <div class="hint">Funziona su Aruba SuperSite: incolli questo codice in una pagina HTML (o lo carichi come file) + carichi gli SVG.</div>
+      <div class="hint">Suggerimento: su GitHub Pages assicurati che i nomi file coincidano (maiuscole/minuscole).</div>
     </div>
   </div>
 
@@ -145,12 +233,15 @@
     ["Grigio", "#808080"]
   ];
 
-  // Placeholder colors presenti negli SVG caricati (i tuoi file usano spesso questi):
-  // (usati come fallback se non troviamo id "colore_1/2/3")
+  // Placeholder (fallback se non esistono id colore_1/2/3)
   const PLACEHOLDER = { c1:"#ff0000", c2:"#ffffff", c3:"#000000" };
 
   // ====== DOM ======
   const modelSelect = document.getElementById("modelSelect");
+  const modelGrid = document.getElementById("modelGrid");
+  const card1 = document.getElementById("card1");
+  const card2 = document.getElementById("card2");
+
   const c1Sel = document.getElementById("c1");
   const c2Sel = document.getElementById("c2");
   const c3Sel = document.getElementById("c3");
@@ -164,6 +255,20 @@
   const pill2 = document.getElementById("pill2");
   const pill3 = document.getElementById("pill3");
 
+  const dragToggle = document.getElementById("dragToggle");
+  const pocketX = document.getElementById("pocketX");
+  const pocketY = document.getElementById("pocketY");
+  const initX = document.getElementById("initX");
+  const initY = document.getElementById("initY");
+
+  let dragEnabled = true;
+
+  // Posizioni salvate (si aggiornano col drag o con X/Y)
+  const TEXT_POS = {
+    pocket: { x: null, y: null },
+    init:   { x: null, y: null }
+  };
+
   function fillSelect(sel, defaultHex){
     sel.innerHTML = "";
     for(const [name, hex] of COLOR_OPTIONS){
@@ -172,10 +277,8 @@
       opt.textContent = `${name} (${hex})`;
       sel.appendChild(opt);
     }
-    // imposta default (se presente)
     const found = [...sel.options].find(o => o.value.toLowerCase() === defaultHex.toLowerCase());
-    if(found) sel.value = found.value;
-    else sel.value = COLOR_OPTIONS[0][1];
+    sel.value = found ? found.value : COLOR_OPTIONS[0][1];
   }
 
   fillSelect(c1Sel, "#FF0000");
@@ -193,7 +296,7 @@
     svgHost.innerHTML = "<div class='muted'>Caricamento modello…</div>";
     const res = await fetch(url, { cache: "no-store" });
     if(!res.ok){
-      svgHost.innerHTML = `<div class="muted">Errore: non trovo <b>${url}</b>. Controlla che il file sia nella stessa cartella della pagina.</div>`;
+      svgHost.innerHTML = `<div class="muted">Errore: non trovo <b>${url}</b>. Metti il file nella stessa cartella della pagina.</div>`;
       currentSvgDoc = null;
       return;
     }
@@ -202,20 +305,23 @@
     const doc = parser.parseFromString(txt, "image/svg+xml");
     const svg = doc.documentElement;
 
-    // Pulizia: elimina eventuali script esterni
+    // sicurezza: rimuovi script
     svg.querySelectorAll("script").forEach(s => s.remove());
 
-    // Inseriamo inline
+    // Inserisci inline
     svgHost.innerHTML = "";
     svgHost.appendChild(svg);
     currentSvgDoc = svg;
 
-    // Applica subito settaggi correnti
+    // Reset posizioni quando cambi modello (così non “sballa”)
+    TEXT_POS.pocket = { x:null, y:null };
+    TEXT_POS.init   = { x:null, y:null };
+    syncPosInputs();
+
     applyAll();
   }
 
   function setFill(el, hex){
-    // set sia fill attr che eventuale style fill:
     el.setAttribute("fill", hex);
     const style = el.getAttribute("style");
     if(style && style.includes("fill:")){
@@ -224,7 +330,6 @@
   }
 
   function getElementFill(el){
-    // prova a leggere fill da attr o style
     const f = el.getAttribute("fill");
     if(f && f !== "none") return f;
     const style = el.getAttribute("style") || "";
@@ -237,20 +342,17 @@
     pill1.classList.remove("on"); pill2.classList.add("on"); pill3.classList.remove("on");
 
     const all = svg.querySelectorAll("*");
-
     all.forEach(el => {
       const id = (el.getAttribute("id") || "").toLowerCase();
 
-      // Priorità: id del tipo colore_1..., colore_2..., colore_3...
       if(id.startsWith("colore_1")) return setFill(el, colors.c1);
       if(id.startsWith("colore_2")) return setFill(el, colors.c2);
       if(id.startsWith("colore_3")) return setFill(el, colors.c3);
 
-      // Fallback: se non ha id colore_*, usa placeholder per rimpiazzare
       const f = getElementFill(el);
       if(!f) return;
-
       const fl = f.toLowerCase();
+
       if(fl === PLACEHOLDER.c1) setFill(el, colors.c1);
       else if(fl === PLACEHOLDER.c2) setFill(el, colors.c2);
       else if(fl === PLACEHOLDER.c3) setFill(el, colors.c3);
@@ -264,12 +366,11 @@
       g.setAttribute("id", "__overlay_texts__");
       svg.appendChild(g);
     }
-    // pulisci layer
     g.innerHTML = "";
     return g;
   }
 
-  function addText(svg, text, x, y, options={}){
+  function addTextNode(svg, text, x, y, options={}){
     const t = document.createElementNS("http://www.w3.org/2000/svg", "text");
     t.textContent = text;
     t.setAttribute("x", x);
@@ -281,6 +382,12 @@
     t.setAttribute("font-size", options.size || "4.2");
     t.setAttribute("fill", options.fill || "#000000");
     if(options.transform) t.setAttribute("transform", options.transform);
+
+    // drag hint
+    t.style.cursor = "move";
+    t.style.userSelect = "none";
+
+    if(options.id) t.setAttribute("id", options.id);
     return t;
   }
 
@@ -293,66 +400,143 @@
     }
   }
 
+  function textColorOn(hex){
+    const h = hex.replace("#","").trim();
+    if(h.length !== 6) return "#000";
+    const r = parseInt(h.substring(0,2),16), g = parseInt(h.substring(2,4),16), b = parseInt(h.substring(4,6),16);
+    const lum = (0.2126*r + 0.7152*g + 0.0722*b);
+    return lum < 140 ? "#FFFFFF" : "#000000";
+  }
+
+  function svgPointFromClient(svg, clientX, clientY){
+    const pt = svg.createSVGPoint();
+    pt.x = clientX; pt.y = clientY;
+    const ctm = svg.getScreenCTM();
+    if(!ctm) return {x:0,y:0};
+    const inv = ctm.inverse();
+    const p = pt.matrixTransform(inv);
+    return { x: p.x, y: p.y };
+  }
+
+  function makeDraggable(svg, node, key){
+    let dragging = false;
+    let offset = {x:0, y:0};
+
+    const onDown = (e) => {
+      if(!dragEnabled) return;
+      dragging = true;
+
+      const p = svgPointFromClient(svg, e.clientX, e.clientY);
+      const nx = parseFloat(node.getAttribute("x"));
+      const ny = parseFloat(node.getAttribute("y"));
+      offset.x = nx - p.x;
+      offset.y = ny - p.y;
+
+      node.setPointerCapture?.(e.pointerId);
+    };
+
+    const onMove = (e) => {
+      if(!dragEnabled || !dragging) return;
+      const p = svgPointFromClient(svg, e.clientX, e.clientY);
+      const x = p.x + offset.x;
+      const y = p.y + offset.y;
+
+      node.setAttribute("x", x);
+      node.setAttribute("y", y);
+
+      TEXT_POS[key].x = x;
+      TEXT_POS[key].y = y;
+      syncPosInputs(false);
+    };
+
+    const onUp = () => { dragging = false; };
+
+    node.addEventListener("pointerdown", onDown);
+    window.addEventListener("pointermove", onMove);
+    window.addEventListener("pointerup", onUp);
+  }
+
+  function syncPosInputs(onlyIfNull=true){
+    // aggiorna input (se onlyIfNull=true: scrive solo se vuoti)
+    const setIf = (inp, val) => {
+      if(val == null) return;
+      if(!onlyIfNull || inp.value === "" || isNaN(parseFloat(inp.value))) inp.value = (+val).toFixed(1);
+    };
+
+    setIf(pocketX, TEXT_POS.pocket.x);
+    setIf(pocketY, TEXT_POS.pocket.y);
+    setIf(initX, TEXT_POS.init.x);
+    setIf(initY, TEXT_POS.init.y);
+  }
+
   function applyTexts(svg, colors, name, initials){
     pill1.classList.remove("on"); pill2.classList.remove("on"); pill3.classList.add("on");
-
     const overlay = ensureOverlayLayer(svg);
 
-    // Colore testo: scegliamo nero o bianco in base a Colore 1/2 (per leggibilità semplice)
-    function textColorOn(hex){
-      // luminanza rapida
-      const h = hex.replace("#","").trim();
-      const r = parseInt(h.substring(0,2),16), g = parseInt(h.substring(2,4),16), b = parseInt(h.substring(4,6),16);
-      const lum = (0.2126*r + 0.7152*g + 0.0722*b);
-      return lum < 140 ? "#FFFFFF" : "#000000";
-    }
-
-    // --- Nome sul taschino ---
+    // --- Trova taschino e maniche per posizioni “di default” ---
     const pocketEl =
       svg.querySelector("#colore_1_taschino") ||
       svg.querySelector("[id*='taschino']") ||
       null;
 
-    if(name && pocketEl){
-      const c = bboxCenter(pocketEl);
-      if(c){
-        const fill = textColorOn(colors.c1); // di solito taschino è colore_1
-        const size = Math.max(3.2, Math.min(5.0, c.b.width / 6)); // scala semplice
-        overlay.appendChild(addText(svg, name, c.cx, c.cy, { size: String(size), fill, weight:"700" }));
-      }
-    }
-
-    // --- Iniziali sulle maniche (destra + sinistra, se trovate) ---
-    // prova2: spesso ha "colore_1_manica" e "colore_2_manica_sinistra" ecc.
-    // prova1: ha varie maniche con id colore_1_...
     const rightSleeve =
       svg.querySelector("#colore_1_manica") ||
       svg.querySelector("[id*='manica'][id*='des']") ||
       svg.querySelector("[id*='manica']");
 
-    const leftSleeve =
-      svg.querySelector("#colore_2_manica_sinistra") ||
-      svg.querySelector("[id*='manica_sinistra']") ||
-      svg.querySelector("[id*='sinistra']");
+    // Per le iniziali usiamo UNA posizione comune (poi puoi trascinare)
+    // Default: sopra la manica “trovata”
+    // Se non trova manica, usa un punto “centrale”
+    const defaultInit = (() => {
+      const c = rightSleeve ? bboxCenter(rightSleeve) : null;
+      if(c) return { x: c.cx, y: c.b.y + c.b.height * 0.35 };
+      return { x: 50, y: 50 };
+    })();
 
-    if(initials){
-      // mettiamo le iniziali in alto sulla manica, leggermente ruotate
-      const addOnSleeve = (el, rotDeg) => {
-        if(!el) return;
-        const c = bboxCenter(el);
-        if(!c) return;
-        const x = c.cx;
-        const y = c.b.y + c.b.height * 0.35;
-        const fill = textColorOn(getElementFill(el) || colors.c1);
-        const size = Math.max(3.6, Math.min(6.5, c.b.width / 5));
-        const transform = `rotate(${rotDeg} ${x} ${y})`;
-        overlay.appendChild(addText(svg, initials, x, y, { size: String(size), fill, weight:"800", transform }));
-      };
+    // --- Nome taschino ---
+    let pocketTextNode = null;
+    if(name){
+      let x = TEXT_POS.pocket.x, y = TEXT_POS.pocket.y;
 
-      // rotazioni opposte per dare effetto “sleeve”
-      addOnSleeve(rightSleeve, -18);
-      addOnSleeve(leftSleeve, 18);
+      if((x == null || y == null) && pocketEl){
+        const c = bboxCenter(pocketEl);
+        if(c){ x = c.cx; y = c.cy; }
+      }
+      if(x == null || y == null){ x = 50; y = 60; }
+
+      TEXT_POS.pocket.x = x;
+      TEXT_POS.pocket.y = y;
+
+      const fill = textColorOn(colors.c1);
+      const size = pocketEl ? Math.max(3.2, Math.min(5.0, (bboxCenter(pocketEl)?.b.width || 30) / 6)) : 4.2;
+
+      pocketTextNode = addTextNode(svg, name, x, y, { size: String(size), fill, weight:"700", id:"__pocket_text__" });
+      overlay.appendChild(pocketTextNode);
+      makeDraggable(svg, pocketTextNode, "pocket");
+    } else {
+      // se vuoto, reset pos perché altrimenti rimane vecchia
+      TEXT_POS.pocket = { x: TEXT_POS.pocket.x, y: TEXT_POS.pocket.y };
     }
+
+    // --- Iniziali ---
+    let initTextNode = null;
+    if(initials){
+      let x = TEXT_POS.init.x, y = TEXT_POS.init.y;
+      if(x == null || y == null){ x = defaultInit.x; y = defaultInit.y; }
+
+      TEXT_POS.init.x = x;
+      TEXT_POS.init.y = y;
+
+      const sleeveFill = rightSleeve ? (getElementFill(rightSleeve) || colors.c1) : colors.c1;
+      const fill = textColorOn(sleeveFill);
+      const size = rightSleeve ? Math.max(3.6, Math.min(6.5, (bboxCenter(rightSleeve)?.b.width || 30) / 5)) : 5.0;
+
+      initTextNode = addTextNode(svg, initials, x, y, { size: String(size), fill, weight:"800", id:"__init_text__" });
+      overlay.appendChild(initTextNode);
+      makeDraggable(svg, initTextNode, "init");
+    }
+
+    syncPosInputs(true);
   }
 
   function applyAll(){
@@ -361,29 +545,68 @@
     const colors = { c1: c1Sel.value, c2: c2Sel.value, c3: c3Sel.value };
     recolorSvg(currentSvgDoc, colors);
 
-    // testi
     const name = (pocketName.value || "").trim();
     const init = (sleeveInit.value || "").trim().toUpperCase();
+
+    // Se utente ha scritto X/Y manualmente, applicali
+    const px = parseFloat(pocketX.value); const py = parseFloat(pocketY.value);
+    const ix = parseFloat(initX.value);   const iy = parseFloat(initY.value);
+
+    if(!isNaN(px)) TEXT_POS.pocket.x = px;
+    if(!isNaN(py)) TEXT_POS.pocket.y = py;
+    if(!isNaN(ix)) TEXT_POS.init.x = ix;
+    if(!isNaN(iy)) TEXT_POS.init.y = iy;
+
     applyTexts(currentSvgDoc, colors, name, init);
   }
 
+  // ====== Model UI (icone) ======
+  function setModel(url){
+    modelSelect.value = url;
+    card1.classList.toggle("on", url === "prova1puro.svg");
+    card2.classList.toggle("on", url === "prova2puro.svg");
+    loadModel(url);
+  }
+
+  modelGrid.addEventListener("click", (e) => {
+    const card = e.target.closest(".modelCard");
+    if(!card) return;
+    setModel(card.dataset.model);
+  });
+
   // ====== Events ======
-  modelSelect.addEventListener("change", () => loadModel(modelSelect.value));
   applyBtn.addEventListener("click", applyAll);
 
-  // Applica live quando cambi colori/testi (più comodo)
   [c1Sel, c2Sel, c3Sel, pocketName, sleeveInit].forEach(el => {
     el.addEventListener("input", applyAll);
     el.addEventListener("change", applyAll);
   });
 
+  [pocketX, pocketY, initX, initY].forEach(el => {
+    el.addEventListener("input", () => {
+      // non ricalcolare default, usa valori inseriti
+      applyAll();
+    });
+  });
+
+  dragToggle.addEventListener("click", () => {
+    dragEnabled = !dragEnabled;
+    dragToggle.classList.toggle("on", dragEnabled);
+    dragToggle.textContent = dragEnabled ? "Drag: ON" : "Drag: OFF";
+  });
+
   resetBtn.addEventListener("click", () => {
-    modelSelect.value = "prova2puro.svg";
+    setModel("prova2puro.svg");
     c1Sel.value = "#FF0000";
     c2Sel.value = "#FFFFFF";
     c3Sel.value = "#000000";
     pocketName.value = "";
     sleeveInit.value = "";
+
+    TEXT_POS.pocket = { x:null, y:null };
+    TEXT_POS.init   = { x:null, y:null };
+    pocketX.value = ""; pocketY.value = ""; initX.value = ""; initY.value = "";
+
     loadModel(modelSelect.value);
   });
 
